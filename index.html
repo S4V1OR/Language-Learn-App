@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Language Learner</h1>
+        <nav>
+            <button id="home-btn">Home</button>
+            <button id="flashcards-btn">Flashcards</button>
+            <button id="quiz-btn">Quiz</button>
+        </nav>
+        <div id="progress">Progress: 0 flashcards, 0 quizzes</div>
+    </header>
+    <main>
+        <section id="landing">
+            <h2>Welcome to Language Learning!</h2>
+            <p>Learn new words with interactive flashcards and test your knowledge with multiple choice quizzes.</p>
+            <button id="start-flashcards">Start Flashcards</button>
+            <button id="start-quiz">Start Quiz</button>
+        </section>
+        <section id="flashcards" class="hidden">
+            <h2>Vocabulary Flashcards</h2>
+            <div id="flashcard">
+                <div id="front">Word</div>
+                <div id="back" class="hidden">Translation</div>
+            </div>
+            <div class="controls">
+                <button id="flip-btn">Flip Card</button>
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </section>
+        <section id="quiz" class="hidden">
+            <h2>Multiple Choice Quiz</h2>
+            <div id="question">Question</div>
+            <div id="options">
+                <button class="option">A</button>
+                <button class="option">B</button>
+                <button class="option">C</button>
+                <button class="option">D</button>
+            </div>
+            <div id="score" class="hidden">Score: 0/10</div>
+            <button id="restart-quiz" class="hidden">Restart Quiz</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
